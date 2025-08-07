@@ -67,7 +67,7 @@ More understanding of JavaScript. and learning more seudocode in css.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/mmisa0009)
+- Frontend Mentor - [@mmisa0009](https://www.frontendmentor.io/profile/mmisa0009)
 
 
 
