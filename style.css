@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(202, 86%, 94%);
+    padding: 0;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: hsl(202, 55%, 16%);
+    font-size: 0.9rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 4em auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.column.left {
+    width: 50%;
+    padding: 2em;
+}
+
+.column.right {
+    width: 50%;
+    background-color: hsl(202, 55%, 16%);
+    color: hsl(202, 86%, 94%);
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    padding: 2em;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5em;
+}
+
+#amount {
+    height: 2.5em;
+}
+
+.input.amount input {
+    text-align: right;
+}
+
+
+.third-row {
+    display: flex;
+    padding: 1em 0;
+    justify-content: space-between;
+}
+
+.box {
+    position: relative;
+    margin-top: 0.5em;
+}
+
+.box input{
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
+    height: 2em;
+}
+
+#term {
+    height: 2.5em;
+}
+
+#interest {
+    height: 2.5em;
+}
+
+.box .symbol {
+    position: absolute;
+    top: 13%;
+    left: 0.8em
+}
+
+.box .unit {
+    position: absolute;
+    right: 0.8em;
+    top: 45%;
+    transform: translateY(-50%);
+    color: hsl(202, 55%, 16%);
+    pointer-events: none;
+}
+
+.mortgage-type {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0;
+    gap:1em;
+}
+
+.mortgage-type label{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid hsl(202, 55%, 16%);
+    padding: 0.5em 1em;
+    font-weight: 700;
+}
+
+.mortgage-type label:has(input[type="radio"]:checked) {
+    background-color: hsla(61, 71%, 58%, 0.323);
+    border: 1px solid hsl(61, 70%, 52%);
+    border-radius: 5px;
+}
+
+.calculate-btn {
+    background-color:hsl(61, 70%, 52%);
+    color: hsl(202, 55%, 16%);
+    border-radius: 25px;
+    padding: 0.5em 1.5em;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 2em;
+}
+
+.calculate-btn:hover {
+    background-color: hsl(61, 70%, 62%);
+    cursor: pointer;
+}
+
+
+.results {
+    background-color: hsl(202, 56%, 11%); 
+    border-radius: 5px;
+    padding: 2em;
+    border-top: hsl(61, 70%, 52%) solid 5px
+}
+
+#monthly-result {
+    margin-top: 0.5rem;
+    font-size: 3rem;
+}
+
+#total {
+    margin-top: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.description {
+    padding-bottom: 1.5em;
+}
+
+hr {
+    color: hsl(200, 24%, 40%);
+    border: solid 0.8px;
+    margin: 1em auto;
+}
+
+a {
+     color: hsl(202, 55%, 16%)
+}
+
+h1 {
+    color: hsl(61, 70%, 52%);
+    
+}
+
+.attribution {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .column.left, .column.right {
+        width: 100%;
+    }
+
+    .header {
+        align-items: flex-start;
+    }
+
+    .third-row {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
